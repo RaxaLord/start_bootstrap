@@ -1,0 +1,87 @@
+.container {
+  width: 100vw;
+  height: 760px;
+  position: fixed;
+  background: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  /* background-color:; */
+  height: 100px;
+  width: 80%;
+  /* padding: 0 80px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: 'Kaushan Script', cursive;
+  color: #fed136;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  min-width: 250px;
+}
+
+header button {
+  display: none;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+}
+
+header nav a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    height: 835px;
+  }
+
+  header {
+    height: 55px;
+    background: #212529;
+    width: 100vw;
+    padding: 0 125px;
+  }
+
+  header nav {
+    transform: translate(0, -100px);
+  }
+
+  .show {
+    transform: translate(100px, 100px);
+  }
+
+  .header-logo {
+    font-size: 22px;
+  }
+
+  header button {
+    background-color: #fed136;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 125px;
+    height: 35px;
+    width: 70px;
+    z-index: 1;
+  }
+}
